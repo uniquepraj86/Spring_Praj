@@ -1,0 +1,6 @@
+
+IOC-
+Spring IoC Container is the core of Spring Framework.
+It creates the objects, configures and assembles their dependencies, manages their entire life cycle.
+
+create manage and destroy object

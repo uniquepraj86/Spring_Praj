@@ -1,0 +1,27 @@
+
+
+Dependency injection-
+
+Dependency Injection is the ability of an object to supply dependencies of another object.
+
+Client Class:
+              This is the dependent class and is dependent on the Service class.
+
+Service Class:
+              This class provides a service to the client class.
+
+Injector Class:
+              This class is responsible for injecting the service class object into the client class
+
+
+Constructor Injection:
+             In this type of injection, the injector supplies dependency through the client class constructor.
+
+
+Setter Injection / Property Injection:
+            In this type of injection, the injector method injects the dependency to the setter method exposed by the client.
+
+
+Interface Injection: In this type of injection, the injector uses Interface to provide dependency to the client class. The clients must implement
+                    an interface that will expose a setter method which accepts the dependency.
+
