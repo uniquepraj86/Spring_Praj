@@ -1,10 +1,11 @@
 package com.praj.spring;
 
 import com.praj.spring.di.Company;
-import com.praj.spring.di.Student;
+//import com.praj.spring.di.Student;
 import com.praj.spring.ioc.Idea;
 import com.praj.spring.ioc.Jio;
 import com.praj.spring.ioc.Vodafone;
+import com.praj.spring.jpa.entity.Student;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
+
 public class Springpraj86Application {
 
     public static void main(String[] args) {
@@ -24,8 +26,8 @@ public class Springpraj86Application {
 //        obj1.call();
 //        obj2.msg();
 
-        Student student = context.getBean(Student.class);
-        student.showStudSub();
+//        Student student = context.getBean(Student.class);
+//        student.showStudSub();
 
 //
 //        Company company =context.getBean(Company.class);
