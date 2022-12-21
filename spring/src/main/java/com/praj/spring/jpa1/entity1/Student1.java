@@ -1,28 +1,24 @@
-package com.praj.spring.jpa.entity;
+package com.praj.spring.jpa1.entity1;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+
 @Entity
 @JsonIgnoreProperties({"hibernateLazyInitializer"})
-public class Student {
+public class Student1 {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-    private Integer id;
-
+    private int id;
     private String name;
-
     private String address;
+    private Integer MobileNo;
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -40,5 +36,13 @@ public class Student {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public Integer getMobileNo() {
+        return MobileNo;
+    }
+
+    public void setMobileNo(Integer mobileNo) {
+        MobileNo = mobileNo;
     }
 }
