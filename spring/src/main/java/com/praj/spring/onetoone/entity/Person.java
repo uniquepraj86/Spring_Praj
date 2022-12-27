@@ -1,23 +1,35 @@
 package com.praj.spring.onetoone.entity;
 
-
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 @Entity
+
 public class Person {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+   private String name;
+   private int age;
 
-   private int id;
-    private String name;
-    private int age;
+   @OneToOne(mappedBy = "person",cascade = CascadeType.ALL)
+   @JsonManagedReference
+   private Aadhar aadhar;
+
+    public Aadhar getAadhar() {
+        return aadhar;
+    }
+
+    public void setAadhar(Aadhar aadhar) {
+        this.aadhar = aadhar;
+    }
 
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

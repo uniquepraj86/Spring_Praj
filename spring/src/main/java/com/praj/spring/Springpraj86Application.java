@@ -5,7 +5,7 @@ import com.praj.spring.di.Company;
 import com.praj.spring.ioc.Idea;
 import com.praj.spring.ioc.Jio;
 import com.praj.spring.ioc.Vodafone;
-import com.praj.spring.jpa.entity.Student;
+//import com.praj.spring.jpa.entity.Student;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
